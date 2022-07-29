@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-//import  { App }  from '../components/App/index'
+//import App from '../App'
 
 
 /*  Add to interface for everyone action
