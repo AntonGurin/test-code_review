@@ -6,6 +6,9 @@ import {
     useSelector,
 } from 'react-redux';
 
+// useSelector(state => state.list.todos).Pull "state: {list: { todos: any[] }}" from function 
+// and leave only "state:".
+// CodeStyle problems (used spaces and tabs)
 function App() {
     const todos = useSelector((state: {list: { todos: any[] }}) => state.list.todos);
   return (
