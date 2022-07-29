@@ -9,7 +9,8 @@ import { configureStore } from '@reduxjs/toolkit'
     We could create file ./actions/const for export consts in ours actions.
     All we need exporting from types dir, we are imports in other files e.x. index.ts
     We can create another one case visability_filter
-    Case 'ADD_TODO' have to return object.assign({}) and add object.assign for each case.
+    Case 'ADD_TODO' have to return object.assign({}) | case'ADD_TODO': {return state.todos.push(action.payload)}.
+    Add object.assign for each case 
     On the one hand, keeping constants in separate files is not good for navigation or local logic but 
     I think it's a pretty well solution for logic in general.
 */
