@@ -1,4 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
+//import  { App }  from '../components/App/index'
 
 export default configureStore({
     reducer: {
@@ -25,4 +26,4 @@ export default configureStore({
             }
         }
     }
-})
+}) 
