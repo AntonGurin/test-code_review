@@ -21,6 +21,8 @@ type MainAppState = {
     todoTitle: string
 };
 
+/* Class Index is hard to reading. Need to pull the logic from first return  */
+
 class Index extends React.Component<MainAppProps, MainAppState> {
     constructor(props: MainAppProps) {
         super(props);
