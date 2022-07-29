@@ -7,6 +7,11 @@ type UserSelectProps = {
     idx: number,
 }
 
+// useSelector(state => state.list.todos). Pull "state: {list: { todos: any[] }}" from function
+// and leave only "state:". 
+// Function UserSelect is a big and hard to reading. I think we can break the function
+// into slices.
+// UseDispatch and UseSelector have to keep in ./hooks.ts 
 function UserSelect(props: UserSelectProps) {
     const dispatch = useDispatch();
     const todos = useSelector((state: {list: { todos: any[] }}) => state.list.todos);
